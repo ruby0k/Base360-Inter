@@ -111,9 +111,9 @@ class SecureClient:
                         elif key == 'status':
                             query = query.eq('status', value)
                         elif key == 'check_in_date':
-                            query = query.gte('check_in', value)
+                            query = query.gte('check_in_date', value)
                         elif key == 'check_out_date':
-                            query = query.lte('check_out', value)
+                            query = query.lte('check_out_date', value)
                         else:
                             query = query.eq(key, value)
             
